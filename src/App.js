@@ -26,7 +26,7 @@ class App extends Component {
         <DatePicker onChange={this.onChange.bind(this)} />
        
         <ul>
-          {this.state.list.map((item, index) => {
+          {this.state.list.map((item, index) => { 
             return (
               <li className='red' key={index} >
                 { this.state.show?
@@ -35,8 +35,6 @@ class App extends Component {
                  content={item} 
                  index={index} 
                  deleteItem={this.deleteItem.bind(this)}/>:null}
-                
-                
               </li>
             );
           })}
